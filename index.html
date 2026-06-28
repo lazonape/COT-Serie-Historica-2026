@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>COT Histórico 2026 — 23/06 actualizado</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0f0f0e;color:#d3d1c7;padding:20px}
+h1{font-size:15px;font-weight:500;color:#888780;margin-bottom:4px}
+.subtitle{font-size:12px;color:#444441;margin-bottom:18px}
+.tabs{display:flex;gap:8px;margin-bottom:18px;flex-wrap:wrap}
+.tb{padding:7px 18px;border:0.5px solid #333331;border-radius:8px;background:transparent;color:#888780;font-size:13px;cursor:pointer}
+.tb.on{background:#1c1c1a;color:#d3d1c7;border-color:#555552;font-weight:500}
+.tc{display:none}.tc.on{display:block}
+.sg{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:9px;margin:14px 0}
+.sc{background:#1c1c1a;border-radius:8px;padding:10px 13px;border:0.5px solid #2a2a28}
+.sl{font-size:11px;color:#888780;margin-bottom:3px}
+.sv{font-size:14px;font-weight:500;color:#d3d1c7}
+.cu{font-size:11px;color:#1D9E75}.cd{font-size:11px;color:#D85A30}
+.badge{display:inline-block;font-size:9px;font-weight:600;padding:1px 5px;border-radius:20px;margin-left:5px;vertical-align:middle}
+.bn{background:rgba(29,158,117,0.15);color:#1D9E75}
+.bw{background:rgba(216,90,48,0.12);color:#D85A30}
+.by{background:rgba(186,117,23,0.15);color:#BA7517}
+.lgd{display:flex;flex-wrap:wrap;gap:12px;margin:10px 0 4px;font-size:12px;color:#888780}
+.lgd span{display:flex;align-items:center;gap:5px}
+.ld{width:22px;height:3px;border-radius:2px;display:inline-block}
+.chart-wrap{position:relative;width:100%;height:300px;margin-top:4px}
+.ev-leyenda{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 0;font-size:11px}
+.ev-leyenda span{display:flex;align-items:center;gap:5px;color:#888780}
+.ev-dot{width:14px;height:2px;border-radius:1px;display:inline-block}
+/* Lectura */
+.lectura{background:#161614;border:0.5px solid #2a2a28;border-radius:10px;padding:14px 16px;margin-top:16px}
+.lectura-titulo{font-size:13px;font-weight:600;color:#d3d1c7;margin-bottom:8px;padding-bottom:7px;border-bottom:0.5px solid #2a2a28}
+.lectura-titulo span{color:#888780;font-weight:400}
+.lectura p{font-size:12.5px;color:#b0aea6;line-height:1.7;margin-bottom:7px}
+.lectura p:last-child{margin-bottom:0}
+.lectura strong{color:#d3d1c7}
+/* Macro tabla */
+.macro-bloque{background:#0f1a12;border:0.5px solid #1a2e1e;border-radius:8px;padding:12px 14px;margin-top:10px}
+.macro-bloque-title{font-size:11px;font-weight:600;color:#1D9E75;margin-bottom:8px;letter-spacing:0.04em;text-transform:uppercase}
+.macro-row{display:flex;align-items:center;gap:8px;padding:4px 0;border-bottom:0.5px solid #1a2e1e;flex-wrap:wrap}
+.macro-row:last-child{border-bottom:none;padding-bottom:0}
+.m-fecha{font-size:11px;color:#555552;min-width:42px}
+.m-ind{font-size:12px;color:#d3d1c7;flex:1;min-width:160px}
+.m-prev{font-size:11px;color:#555552;min-width:70px}
+.m-result{font-size:12px;font-weight:600;padding:2px 8px;border-radius:5px;min-width:60px;text-align:center}
+.m-hawk{background:rgba(216,90,48,0.15);color:#D85A30}
+.m-dove{background:rgba(29,158,117,0.15);color:#1D9E75}
+.m-neut{background:rgba(136,135,128,0.12);color:#888780}
+.m-label{font-size:10px;padding:1px 6px;border-radius:20px;font-weight:600}
+.alerta{background:#1e1008;border:0.5px solid #D85A30;border-radius:7px;padding:8px 12px;margin-top:9px;font-size:12px;color:#D85A30;line-height:1.6}
+.insight{background:#0d1a14;border:0.5px solid #1D9E75;border-radius:7px;padding:8px 12px;margin-top:9px;font-size:12px;color:#1D9E75;line-height:1.6}
+.ev{font-size:10px;color:#333331;margin-top:14px;padding-top:10px;border-top:0.5px solid #1c1c1a}
+</style>
+</head>
+<body>
+<h1>Commitment of Traders · Serie Histórica 2026</h1>
+<p class="subtitle">06/01/2026 → <strong style="color:#d3d1c7">23/06/2026</strong> · 25 semanas · William Bernal | @cryptowile</p>
+
+<div class="tabs">
+  <button class="tb on" onclick="sw('us30',this)">US30</button>
+  <button class="tb" onclick="sw('gold',this)">Oro (XAU)</button>
+  <button class="tb" onclick="sw('silver',this)">Plata (XAG)</button>
+</div>
+
+<!-- ═══ US30 ═══ -->
+<div class="tc on" id="t-us30">
+  <div class="sg">
+    <div class="sc">
+      <div class="sl">Dealer Intermediary<span class="badge by">Reduce corto</span></div>
+      <div class="sv" style="color:#BA7517">−3,962 <span class="cu">▲ 2,108</span></div>
+    </div>
+    <div class="sc">
+      <div class="sl">Asset Manager<span class="badge by">Toma parcial</span></div>
+      <div class="sv" style="color:#1D9E75">+6,516 <span class="cd">▼ 1,285</span></div>
+    </div>
+    <div class="sc">
+      <div class="sl">Leveraged Funds<span class="badge bn">Pequeña cobertura</span></div>
+      <div class="sv" style="color:#D85A30">−9,025 <span class="cu">▲ 1,233</span></div>
+    </div>
+    <div class="sc" style="border-color:#BA7517;background:rgba(186,117,23,0.05)">
+      <div class="sl" style="color:#BA7517">Señal COT</div>
+      <div class="sv" style="color:#BA7517">Consolidación · PMI alcista ↕</div>
+    </div>
+  </div>
+  <div class="lgd">
+    <span><span class="ld" style="background:#3266ad"></span>Dealer Intermediary</span>
+    <span><span class="ld" style="background:#1D9E75"></span>Asset Manager</span>
+    <span><span class="ld" style="background:#D85A30"></span>Leveraged Funds</span>
+  </div>
+  <div class="chart-wrap"><canvas id="cUS"></canvas></div>
+  <div class="ev-leyenda">
+    <span><span class="ev-dot" style="background:#5B7FA6"></span>FOMC</span>
+    <span><span class="ev-dot" style="background:#8B3A3A"></span>Guerra Irán 28/02</span>
+    <span><span class="ev-dot" style="background:#BA7517"></span>Warsh nom./disc.</span>
+    <span><span class="ev-dot" style="background:#533AB7"></span>IPC 3.8% 12/05</span>
+    <span><span class="ev-dot" style="background:#2E7D5E"></span>NNA 172K 05/06</span>
+    <span><span class="ev-dot" style="background:#7B3F9E"></span>IPC/IPP 10-11/06</span>
+    <span><span class="ev-dot" style="background:#1D7FA0"></span>Fed ↓3.75% · NPSD 17-18/06</span>
+    <span><span class="ev-dot" style="background:#5E9E3A"></span>PMI 55.7 23/06</span>
+  </div>
+  <div class="lectura">
+    <div class="lectura-titulo">US30 — <span>Dealers reducen corto; LF cubre mientras el PMI de 55.7 reencuadra el ciclo</span></div>
+    <p>Los <strong>Dealers redujeron su posición corta en +2,108 contratos netos</strong> (de −6,070 a −3,962) — primera cobertura desde que cruzaron a neto corto la semana pasada. No es una reversión, pero sí una señal de que el movimiento bajista corto más agresivo quedó atrás por ahora. Los Dealers siguen en territorio neto corto.</p>
+    <p>Los <strong>Asset Managers distribuyeron −1,285 contratos</strong> (de +7,801 a +6,516), recortando parte de la compra masiva de la semana anterior. No es salida — siguen claramente en largo neto. Los <strong>Leveraged Funds cubrieron +1,233 contratos</strong> (de −10,258 a −9,025), reduciendo ligeramente su corto neto. Tres grupos, tres movimientos pequeños: la semana del 23/06 es de consolidación más que de dirección.</p>
+    <p>El dato macro más relevante es el <strong>PMI Manufacturero de 55.7 del 23/06</strong> — zona de expansión fuerte, el nivel más alto en meses. Combinado con el <strong>recorte de la Fed del 17/06 a 3.75%</strong>, el entorno macro para renta variable es constructivo: tasas bajando + manufactura expandiéndose. Sin embargo, el COT no refleja aún un posicionamiento comprador neto agregado (Dealers siguen cortos), lo que sugiere que el mercado espera confirmación antes de comprometer capital institucional masivo.</p>
+  </div>
+</div>
+
+<!-- ═══ GOLD ═══ -->
+<div class="tc" id="t-gold">
+  <div class="sg">
+    <div class="sc">
+      <div class="sl">Dinero Gestionado<span class="badge bn">Máximo histórico ↑</span></div>
+      <div class="sv" style="color:#1D9E75">+115,395 <span class="cu">▲ 1,674</span></div>
+    </div>
+    <div class="sc">
+      <div class="sl">Dealers Swaps<span class="badge bw">3ª sem. expandiendo</span></div>
+      <div class="sv" style="color:#D85A30">−196,068 <span class="cd">▼ 5,552</span></div>
+    </div>
+    <div class="sc">
+      <div class="sl">No declarar</div>
+      <div class="sv" style="color:#D85A30">+24,065 <span class="cd">▼ 3,278</span></div>
+    </div>
+    <div class="sc" style="border-color:#D85A30;background:rgba(216,90,48,0.05)">
+      <div class="sl" style="color:#D85A30">Señal COT</div>
+      <div class="sv" style="color:#D85A30">Dealers cerca extremo histórico ⚠</div>
+    </div>
+  </div>
+  <div class="lgd">
+    <span><span class="ld" style="background:#3266ad"></span>Dinero Gestionado</span>
+    <span><span class="ld" style="background:#D85A30"></span>Dealers Swaps</span>
+    <span><span class="ld" style="background:#BA7517"></span>No declarar</span>
+  </div>
+  <div class="chart-wrap"><canvas id="cAU"></canvas></div>
+  <div class="ev-leyenda">
+    <span><span class="ev-dot" style="background:#5B7FA6"></span>FOMC</span>
+    <span><span class="ev-dot" style="background:#8B3A3A"></span>Guerra Irán 28/02</span>
+    <span><span class="ev-dot" style="background:#BA7517"></span>Warsh nom./disc.</span>
+    <span><span class="ev-dot" style="background:#533AB7"></span>IPC 3.8% 12/05</span>
+    <span><span class="ev-dot" style="background:#2E7D5E"></span>NNA 172K 05/06</span>
+    <span><span class="ev-dot" style="background:#7B3F9E"></span>IPC/IPP 10-11/06</span>
+    <span><span class="ev-dot" style="background:#1D7FA0"></span>Fed ↓3.75% · NPSD 17-18/06</span>
+    <span><span class="ev-dot" style="background:#5E9E3A"></span>PMI 55.7 23/06</span>
+  </div>
+  <div class="lectura">
+    <div class="lectura-titulo">Oro — <span>El DG alcanza nuevo máximo de la serie en la semana del recorte de la Fed</span></div>
+    <p>El <strong>Dinero Gestionado sumó +1,674 contratos netos adicionales</strong>, llegando a +115,395 — el nivel más alto de toda la serie de 25 semanas, superando el anterior máximo de +113,721 (16/06) y el pico de enero de +137,444 está ahora a solo 22,049 contratos de distancia. La mecánica fue enteramente por cierre de cortos: +3,059 nuevos largos pero +1,385 cortos añadidos simultáneamente, lo que resulta en una acumulación neta moderada pero consistente.</p>
+    <p>Los <strong>Dealers ampliaron su posición corta por tercera semana consecutiva</strong> (de −190,516 a −196,068), acercándose al máximo histórico absoluto de la serie de −247,400 (20/01). Con el <strong>recorte de la Fed del 17/06 a 3.75%</strong> como catalizador, el flujo comprador en oro se intensificó — y los Dealers absorbieron ese flujo vendiéndole contratos al DG como han hecho sistemáticamente durante todo el año. Esta es la dinámica estructural del mercado de futuros de oro.</p>
+    <p>La señal de alerta que emerge: <strong>los Dealers llevan tres semanas expandiendo su posición corta</strong> mientras el DG acumula. Esta configuración (DG en máximo histórico + Dealers expandiendo corto) es estructuralmente idéntica a las condiciones del 12/05 pre-raid, pero con el contexto macroeconómico ahora más dovish (recorte de Fed confirmado + PMI expansivo). El mercado está en equilibrio tenso: la dirección dependerá de si el DG sigue acumulando o si algún dato macro cambia el sesgo.</p>
+    <div class="insight" style="margin-top:9px">💡 El recorte a 3.75% es el entorno más alcista del año para el oro. Pero la posición de Dealers en −196,068 está en zona de alerta — si siguen expandiendo 2 semanas más, estarán en territorio de raid. Vigilar el nivel de −200,000 en Dealers como umbral clave.</div>
+  </div>
+</div>
+
+<!-- ═══ SILVER ═══ -->
+<div class="tc" id="t-silver">
+  <div class="sg">
+    <div class="sc">
+      <div class="sl">Dinero Gestionado<span class="badge bw">Retrocede</span></div>
+      <div class="sv" style="color:#BA7517">+11,741 <span class="cd">▼ 1,144</span></div>
+    </div>
+    <div class="sc">
+      <div class="sl">Dealers Swaps<span class="badge bn">Primera cobertura en 3 sem.</span></div>
+      <div class="sv" style="color:#1D9E75">−26,518 <span class="cu">▲ 1,188</span></div>
+    </div>
+    <div class="sc">
+      <div class="sl">Productor<span class="badge bn">Cobertura significativa</span></div>
+      <div class="sv" style="color:#1D9E75">−13,722 <span class="cu">▲ 2,890</span></div>
+    </div>
+    <div class="sc" style="border-color:#BA7517;background:rgba(186,117,23,0.05)">
+      <div class="sl" style="color:#BA7517">Señal COT</div>
+      <div class="sv" style="color:#BA7517">DG cede · Productores cubren ↕</div>
+    </div>
+  </div>
+  <div class="lgd">
+    <span><span class="ld" style="background:#3266ad"></span>Dinero Gestionado</span>
+    <span><span class="ld" style="background:#D85A30"></span>Dealers Swaps</span>
+    <span><span class="ld" style="background:#BA7517"></span>Productor</span>
+  </div>
+  <div class="chart-wrap"><canvas id="cAG"></canvas></div>
+  <div class="ev-leyenda">
+    <span><span class="ev-dot" style="background:#5B7FA6"></span>FOMC</span>
+    <span><span class="ev-dot" style="background:#8B3A3A"></span>Guerra Irán 28/02</span>
+    <span><span class="ev-dot" style="background:#BA7517"></span>Warsh nom./disc.</span>
+    <span><span class="ev-dot" style="background:#533AB7"></span>IPC 3.8% 12/05</span>
+    <span><span class="ev-dot" style="background:#2E7D5E"></span>NNA 172K 05/06</span>
+    <span><span class="ev-dot" style="background:#7B3F9E"></span>IPC/IPP 10-11/06</span>
+    <span><span class="ev-dot" style="background:#1D7FA0"></span>Fed ↓3.75% · NPSD 17-18/06</span>
+    <span><span class="ev-dot" style="background:#5E9E3A"></span>PMI 55.7 23/06</span>
+  </div>
+  <div class="lectura">
+    <div class="lectura-titulo">Plata — <span>El DG retrocede tras el impulso de la semana anterior; los Productores cubren con fuerza</span></div>
+    <p>Después del impulso de la semana pasada (+2,482 netos), el <strong>Dinero Gestionado retrocedió −1,144 contratos</strong> (de +12,885 a +11,741). La mecánica revela toma de ganancias pura: −1,180 largos cerrados con los cortos prácticamente sin cambio (−36). No es salida masiva, pero sí una consolidación que confirma que la entrada de la semana pasada fue en parte táctica.</p>
+    <p>La señal más positiva de la semana en plata es el <strong>Productor cubriendo +2,890 contratos</strong> (de −16,612 a −13,722) — la mayor cobertura semanal del Productor en meses. Cuando los productores físicos de plata reducen su cobertura corta en futuros, están señalando que el precio actual no es lo suficientemente alto como para asegurar ventas futuras. Esto es constructivo para el precio a medio plazo.</p>
+    <p>Los <strong>Dealers cubrieron por primera vez en tres semanas</strong> (+1,188 contratos, de −26,518 a −25,330). La configuración resultante es: DG por encima de +11,500 (zona media-alta del año), Productor en mínimos de cobertura, Dealers también reduciendo presión. Sin catalizador bajista macro, la plata tiene una base de soporte razonablemente sólida, aunque le falta el impulso comprador del DG que tuvo brevemente la semana pasada.</p>
+    <div class="alerta" style="margin-top:9px">⚠ La plata sigue rezagada respecto al oro, que está en máximos históricos de la serie. El ratio oro/plata sigue elevado — si el DG vuelve a superar +13,000, la plata podría comprimir ese spread con un movimiento más agresivo.</div>
+  </div>
+</div>
+
+<div class="ev">
+  Propiedad de William Bernal a.k.a CryptoWile · Fuentes: CFTC.gov · Bloomberg Terminal · Serie: 06/01/2026 → 23/06/2026 · 25 semanas
+  &nbsp;·&nbsp; US30: CFTC #124603 · Oro: #088691 · Plata: #084691
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/3.0.1/chartjs-plugin-annotation.min.js"></script>
+<script>
+const lbs=['06/01','13/01','20/01','27/01','03/02','10/02','17/02','24/02','03/03','10/03','17/03','24/03','31/03','07/04','14/04','21/04','28/04','05/05','12/05','19/05','26/05','02/06','09/06','16/06','23/06'];
+const gc='rgba(255,255,255,0.05)';const tc='#444441';
+const C={fomc:'#5B7FA6',war:'#8B3A3A',warsh:'#BA7517',ipc:'#533AB7',nnf:'#2E7D5E',cpi2:'#7B3F9E',fed2:'#1D7FA0',pmi:'#5E9E3A'};
+
+function ev(x,color,label,pos){
+  return{type:'line',xMin:x,xMax:x,borderColor:color+'99',borderWidth:1.5,borderDash:[4,3],
+    label:{display:true,content:label,position:pos||'start',font:{size:8},
+      color:color,backgroundColor:'transparent',padding:{x:2,y:1}}};
+}
+
+const anns={
+  fomc1:ev(3.5, C.fomc,'FOMC 28/01','start'),
+  war:  ev(7.5, C.war, 'Guerra 28/02','end'),
+  fomc2:ev(10.5,C.fomc,'FOMC 18/03','start'),
+  wnom: ev(12.3,C.warsh,'Warsh Nom. 30/03','end'),
+  wspc: ev(15,  C.warsh,'Warsh 21/04','start'),
+  fomc3:ev(16.5,C.fomc,'FOMC 29/04','end'),
+  ipc:  ev(18,  C.ipc, 'IPC 3.8% 12/05','start'),
+  nnf:  ev(21.5,C.nnf, 'NNF 172K 05/06','end'),
+  cpi2: ev(22.5,C.cpi2,'IPC/IPP 10-11/06','start'),
+  fed2: ev(23.4,C.fed2,'Fed ↓3.75% 17/06','end'),
+  npsd: ev(23.6,C.fed2,'NPSD 18/06','start'),
+  pmi:  ev(24,  C.pmi, 'PMI 55.7 23/06','end')
+};
+
+function mk(){
+  return{responsive:true,maintainAspectRatio:false,interaction:{mode:'index',intersect:false},
+    plugins:{legend:{display:false},annotation:{annotations:anns},
+      tooltip:{backgroundColor:'#1c1c1a',borderColor:'#333331',borderWidth:0.5,
+        titleColor:'#d3d1c7',bodyColor:'#888780',padding:10,
+        callbacks:{label:c=>`${c.dataset.label}: ${c.parsed.y.toLocaleString()}`}}},
+    scales:{
+      x:{grid:{color:gc},ticks:{color:tc,font:{size:9},maxRotation:45,autoSkip:false}},
+      y:{grid:{color:gc},ticks:{color:tc,font:{size:10},callback:v=>v.toLocaleString()}}
+    }};
+}
+
+function ds(label,data,color,dash){
+  const n=data.length-1;
+  return{label,data,borderColor:color,borderWidth:2,tension:0.3,fill:false,
+    borderDash:dash||[],
+    pointBackgroundColor:data.map((_,i)=>i===n?color:'transparent'),
+    pointRadius:data.map((_,i)=>i===n?6:3),
+    pointBorderColor:data.map((_,i)=>i===n?color:'transparent')};
+}
+
+new Chart(document.getElementById('cUS'),{type:'line',data:{labels:lbs,datasets:[
+  ds('Dealer Intermediary',[-7638,-959,5073,5929,7818,-1625,-321,-2915,-697,-3994,-8339,-2063,-446,3415,1340,-1582,4098,5723,10689,15274,7671,5329,3347,-6070,-3962],'#3266ad'),
+  ds('Asset Manager',[11787,4909,361,4488,2316,10447,5079,4404,-2085,353,3939,1514,4156,583,6153,5722,2718,2638,-1956,-7189,712,895,-689,7801,6516],'#1D9E75'),
+  ds('Leveraged Funds',[-9294,-7891,-9183,-14289,-11899,-11100,-7752,-4957,987,1915,1313,-3059,-7646,-7406,-12174,-9984,-12259,-14697,-12629,-11587,-13809,-11744,-7646,-10258,-9025],'#D85A30',[5,3])
+]},options:mk()});
+
+new Chart(document.getElementById('cAU'),{type:'line',data:{labels:lbs,datasets:[
+  ds('Dinero Gestionado',[123213,134745,137444,118159,92072,92022,95893,95974,97917,98399,102043,91621,92814,90032,95141,92976,89752,94254,98015,93540,97446,112179,105863,113721,115395],'#3266ad'),
+  ds('Dealers Swaps',[-221493,-245941,-247400,-207696,-183144,-179293,-175384,-180988,-179792,-183280,-180814,-181612,-181730,-174455,-182552,-182522,-174621,-179823,-190056,-173715,-166256,-186191,-181736,-190516,-196068],'#D85A30',[5,3]),
+  ds('No declarar',[44403,45868,44919,42889,42174,37726,36867,41629,40438,39844,38779,35501,38438,37446,38556,38934,35242,35632,38636,31796,31506,30325,27199,27343,24065],'#BA7517',[2,2])
+]},options:mk()});
+
+new Chart(document.getElementById('cAG'),{type:'line',data:{labels:lbs,datasets:[
+  ds('Dinero Gestionado',[15822,13792,9946,7699,4983,4569,5968,8523,7766,10289,9647,11158,11266,10398,11270,8868,10606,10843,15761,11564,10055,10444,10403,12885,11741],'#3266ad'),
+  ds('Dealers Swaps',[-26146,-29781,-26633,-22843,-27458,-25373,-26464,-24405,-24951,-25424,-23561,-25046,-23365,-23345,-23377,-24568,-22342,-22922,-24014,-23375,-21348,-24668,-23709,-25706,-26518],'#D85A30',[5,3]),
+  ds('Productor',[-25545,-25511,-19756,-21213,-18267,-16790,-15883,-16675,-15015,-16153,-14797,-15242,-15492,-15570,-16756,-16417,-18110,-17613,-19632,-19293,-19545,-17993,-16659,-16612,-13722],'#BA7517',[2,2])
+]},options:mk()});
+
+function sw(id,el){
+  document.querySelectorAll('.tb').forEach(b=>b.classList.remove('on'));
+  document.querySelectorAll('.tc').forEach(c=>c.classList.remove('on'));
+  document.getElementById('t-'+id).classList.add('on');
+  el.classList.add('on');
+}
+</script>
+</body>
+</html>
