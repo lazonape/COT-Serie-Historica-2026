@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>COT Histórico 2026 — 28/07 actualizado</title>
+<title>COT Histórico 2026 — 04/08 actualizado</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0f0f0e;color:#d3d1c7;padding:20px}
@@ -26,9 +26,6 @@ h1{font-size:15px;font-weight:500;color:#888780;margin-bottom:4px}
 .lgd span{display:flex;align-items:center;gap:5px}
 .ld{width:22px;height:3px;border-radius:2px;display:inline-block}
 .chart-wrap{position:relative;width:100%;height:300px;margin-top:4px}
-.ev-leyenda{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 0;font-size:11px}
-.ev-leyenda span{display:flex;align-items:center;gap:5px;color:#888780}
-.ev-dot{width:14px;height:2px;border-radius:1px;display:inline-block}
 /* Lectura */
 .lectura{background:#161614;border:0.5px solid #2a2a28;border-radius:10px;padding:14px 16px;margin-top:16px}
 .lectura-titulo{font-size:13px;font-weight:600;color:#d3d1c7;margin-bottom:8px;padding-bottom:7px;border-bottom:0.5px solid #2a2a28}
@@ -56,7 +53,7 @@ h1{font-size:15px;font-weight:500;color:#888780;margin-bottom:4px}
 </head>
 <body>
 <h1>Commitment of Traders · Serie Histórica 2026</h1>
-<p class="subtitle">06/01/2026 → <strong style="color:#d3d1c7">28/07/2026</strong> · 29 semanas · William Bernal | @cryptowile</p>
+<p class="subtitle">06/01/2026 → <strong style="color:#d3d1c7">25/08/2026</strong> · 33 semanas · William Bernal | @cryptowile</p>
 
 <div class="tabs">
   <button class="tb on" onclick="sw('us30',this)">US30</button>
@@ -68,20 +65,20 @@ h1{font-size:15px;font-weight:500;color:#888780;margin-bottom:4px}
 <div class="tc on" id="t-us30">
   <div class="sg">
     <div class="sc">
-      <div class="sl">Dealer Intermediary<span class="badge bw">Nuevo mínimo serie</span></div>
-      <div class="sv" style="color:#D85A30">−11,551 <span class="cd">▼ 2,094</span></div>
+      <div class="sl">Dealer Intermediary<span class="badge by">Cubre 2ª sem.</span></div>
+      <div class="sv" style="color:#D85A30">−9,495 <span class="cu">▲ 1,541</span></div>
     </div>
     <div class="sc">
-      <div class="sl">Asset Manager<span class="badge bn">Primer rebote en 5 sem.</span></div>
-      <div class="sv" style="color:#1D9E75">+6,165 <span class="cu">▲ 1,174</span></div>
+      <div class="sl">Asset Manager<span class="badge bn">Rebote fuerte</span></div>
+      <div class="sv" style="color:#1D9E75">+5,512 <span class="cu">▲ 3,051</span></div>
     </div>
     <div class="sc">
-      <div class="sl">Leveraged Funds<span class="badge bn">Cubre +2,257</span></div>
-      <div class="sv" style="color:#D85A30">−1,194 <span class="cu">▲ 2,257</span></div>
+      <div class="sl">Leveraged Funds<span class="badge bw">Vuelve a corto</span></div>
+      <div class="sv" style="color:#D85A30">−1,635 <span class="cd">▼ 3,670</span></div>
     </div>
     <div class="sc" style="border-color:#BA7517;background:rgba(186,117,23,0.05)">
       <div class="sl" style="color:#BA7517">Señal COT</div>
-      <div class="sv" style="color:#BA7517">Dealers en mín. · LF cubren · Mixto ↕</div>
+      <div class="sv" style="color:#BA7517">AM se recupera · LF revierte a corto · Mixto ↕</div>
     </div>
   </div>
   <div class="lgd">
@@ -90,21 +87,12 @@ h1{font-size:15px;font-weight:500;color:#888780;margin-bottom:4px}
     <span><span class="ld" style="background:#D85A30"></span>Leveraged Funds</span>
   </div>
   <div class="chart-wrap"><canvas id="cUS"></canvas></div>
-  <div class="ev-leyenda">
-    <span><span class="ev-dot" style="background:#5B7FA6"></span>FOMC</span>
-    <span><span class="ev-dot" style="background:#8B3A3A"></span>Guerra Irán 28/02</span>
-    <span><span class="ev-dot" style="background:#BA7517"></span>Warsh nom./disc.</span>
-    <span><span class="ev-dot" style="background:#533AB7"></span>IPC 3.8% 12/05</span>
-    <span><span class="ev-dot" style="background:#2E7D5E"></span>NNA 172K 05/06</span>
-    <span><span class="ev-dot" style="background:#7B3F9E"></span>IPC/IPP 10-11/06</span>
-    <span><span class="ev-dot" style="background:#1D7FA0"></span>Fed ↓3.75% · NPSD 17-18/06</span>
-    <span><span class="ev-dot" style="background:#5E9E3A"></span>PMI 55.7 23/06</span>
-  </div>
   <div class="lectura">
-    <div class="lectura-titulo">US30 — <span>Dealers tocan nuevo mínimo de la serie (−11,551); LF cubren y AM rebotan — señales mixtas</span></div>
-    <p>Los <strong>Dealers profundizaron su posición corta a −11,551</strong> — el nuevo mínimo de la serie, expandiendo −2,094 contratos con la mecánica más bajista posible: −850 largos reducidos <em>y</em> +1,244 cortos añadidos simultáneamente. Es la sexta semana consecutiva en territorio neto corto para los Dealers. La acumulación de posición corta desde el pico de +15,274 (19/05) suma ahora −26,825 contratos en diez semanas — un ciclo de distribución completo y consistente.</p>
-    <p>Del lado contrario, aparecen dos señales positivas: los <strong>Leveraged Funds cubrieron +2,257 contratos</strong> (de −3,451 a −1,194), reduciendo significativamente su corto neto. Y los <strong>Asset Managers rebotaron +1,174 contratos</strong> (de +4,991 a +6,165) — su primera semana de acumulación en cinco semanas. La mecánica del AM fue nítida: +1,249 nuevos largos abiertos con los cortos prácticamente planos (+75). Hay convicción alcista real reingresando en este grupo.</p>
-    <p>La lectura agregada es mixta: los Dealers en mínimo histórico de la serie (bearish estructural) frente a LF que cubren y AM que acumulan (bullish táctico). El campo de batalla se reencuadra: si los Dealers no siguen expandiendo agresivamente su corto la próxima semana, el rebote del AM y la cobertura del LF podrían ganar momentum.</p>
+    <div class="lectura-titulo">US30 — <span>Tres semanas erráticas: AM cae, rebota; LF pasa a positivo y vuelve a corto; Dealers cubren de forma sostenida</span></div>
+    <p>El <strong>Asset Manager</strong> tuvo un recorrido volátil desde el 04/08: +8,603 → 11/08 +8,029 (−574) → 18/08 +2,461 (−5,568, la mayor caída semanal de la serie) → 25/08 +5,512 (<strong>+3,051</strong>, recuperación parcial). El grupo no logra consolidar una dirección clara en el último mes; se mueve entre acumulación y liquidación rápida de largos.</p>
+    <p>Los <strong>Dealers</strong> encadenan ya dos semanas de cobertura moderada: −11,236 (04/08) → −13,402 (11/08, −2,166) → −11,036 (18/08, +2,366) → −9,495 (25/08, +1,541). El corto estructural se está reduciendo de forma gradual pero consistente desde mediados de agosto.</p>
+    <p>Los <strong>Leveraged Funds</strong> tuvieron el giro más llamativo: pasaron de −3,113 (04/08) a −1,207 (11/08) y llegaron a territorio positivo en +2,035 (18/08) — su primer neto largo en meses — para luego revertir a −1,635 (25/08, −3,670). El grupo especulativo sigue siendo el más errático de los tres, sin convicción direccional sostenida.</p>
+    <div class="insight" style="margin-top:9px">💡 Nota: datos de esta semana provenientes del contrato E-Mini DJIA (DMU6 Bloomberg), vs. DJIA ×$5 (#124603 CFTC) usado en semanas anteriores. Los netos son comparables en dirección pero no estrictamente en magnitud. Se mantiene la serie para consistencia analítica.</div>
   </div>
 </div>
 
@@ -112,20 +100,20 @@ h1{font-size:15px;font-weight:500;color:#888780;margin-bottom:4px}
 <div class="tc" id="t-gold">
   <div class="sg">
     <div class="sc">
-      <div class="sl">Dinero Gestionado<span class="badge bw">1ª caída en 5 semanas</span></div>
-      <div class="sv" style="color:#BA7517">+119,795 <span class="cd">▼ 5,036</span></div>
+      <div class="sl">Dinero Gestionado<span class="badge bn">Nuevo máx. histórico</span></div>
+      <div class="sv" style="color:#1D9E75">+144,747 <span class="cu">▲ 3,099</span></div>
     </div>
     <div class="sc">
-      <div class="sl">Dealers Swaps<span class="badge bn">3ª sem. cubriendo</span></div>
-      <div class="sv" style="color:#1D9E75">−191,760 <span class="cu">▲ 2,118</span></div>
+      <div class="sl">Dealers Swaps<span class="badge bw">Nuevo mín. histórico ⚠</span></div>
+      <div class="sv" style="color:#D85A30">−245,027 <span class="cd">▼ 16,370</span></div>
     </div>
     <div class="sc">
       <div class="sl">No declarar</div>
-      <div class="sv" style="color:#1D9E75">+30,239 <span class="cu">▲ 950</span></div>
+      <div class="sv" style="color:#D85A30">+36,251 <span class="cu">▲ 22 (plano)</span></div>
     </div>
-    <div class="sc" style="border-color:#BA7517;background:rgba(186,117,23,0.05)">
-      <div class="sl" style="color:#BA7517">Señal COT</div>
-      <div class="sv" style="color:#BA7517">DG cede · Dealers cubren · Pausa ↕</div>
+    <div class="sc" style="border-color:#D85A30;background:rgba(216,90,48,0.05)">
+      <div class="sl" style="color:#D85A30">Señal COT</div>
+      <div class="sv" style="color:#D85A30">4ª semana de divergencia extrema ⚠⚠⚠</div>
     </div>
   </div>
   <div class="lgd">
@@ -134,22 +122,12 @@ h1{font-size:15px;font-weight:500;color:#888780;margin-bottom:4px}
     <span><span class="ld" style="background:#BA7517"></span>No declarar</span>
   </div>
   <div class="chart-wrap"><canvas id="cAU"></canvas></div>
-  <div class="ev-leyenda">
-    <span><span class="ev-dot" style="background:#5B7FA6"></span>FOMC</span>
-    <span><span class="ev-dot" style="background:#8B3A3A"></span>Guerra Irán 28/02</span>
-    <span><span class="ev-dot" style="background:#BA7517"></span>Warsh nom./disc.</span>
-    <span><span class="ev-dot" style="background:#533AB7"></span>IPC 3.8% 12/05</span>
-    <span><span class="ev-dot" style="background:#2E7D5E"></span>NNA 172K 05/06</span>
-    <span><span class="ev-dot" style="background:#7B3F9E"></span>IPC/IPP 10-11/06</span>
-    <span><span class="ev-dot" style="background:#1D7FA0"></span>Fed ↓3.75% · NPSD 17-18/06</span>
-    <span><span class="ev-dot" style="background:#5E9E3A"></span>PMI 55.7 23/06</span>
-  </div>
   <div class="lectura">
-    <div class="lectura-titulo">Oro — <span>El DG cae por primera vez en 5 semanas (−5,036) · Dealers cubren por tercera semana consecutiva</span></div>
-    <p>Después de cuatro semanas consecutivas de máximos históricos, el <strong>Dinero Gestionado retrocedió −5,036 contratos</strong> (de +124,831 a +119,795) — la primera caída desde la semana del 09/06. La mecánica es de toma de ganancias activa: −6,394 largos cerrados <em>y</em> −1,358 cortos también cerrados. No hay apertura de nuevas posiciones cortas — el DG está simplemente reduciendo exposición. Esto es diferente al patrón previo al raid de mayo, donde el DG abría activamente nuevos cortos. La reducción actual parece táctica.</p>
-    <p>Los <strong>Dealers cubrieron por tercera semana consecutiva</strong> (+2,118 contratos, de −193,878 a −191,760). Desde el máximo de −201,296 (07/07), han cubierto +9,536 contratos en tres semanas — la secuencia de cobertura más larga desde el período post-raid de mayo. Con el DG reduciendo y los Dealers cubriendo simultáneamente, la tensión acumulada en el mercado se está liberando de forma ordenada, no explosiva. Esto es constructivo para la estabilidad del precio.</p>
-    <p>El dato más llamativo del reporte es el comportamiento del grupo <strong>Nonreportable Positions</strong>: +15,241 nuevos largos abiertos en una sola semana — el mayor movimiento de este grupo en toda la serie. El dinero minorista está entrando agresivamente en largos de oro. Históricamente, cuando el dinero no reportable entra masivamente en un activo, puede señalar euforia de corto plazo o el inicio de una fase de distribución desde el dinero institucional hacia el minorista.</p>
-    <div class="alerta" style="margin-top:9px">⚠ El comportamiento del Nonreportable (+15,241 largos en una semana) merece vigilancia especial. En la serie de 29 semanas, ningún grupo había movido ese volumen unilateral en una semana. Es la señal más inusual del reporte.</div>
+    <div class="lectura-titulo">Oro — <span>Cuarta semana consecutiva de divergencia: DG rompe máximo histórico de la serie (+144,747), Dealers profundizan a mínimo histórico (−245,027)</span></div>
+    <p>El <strong>Dinero Gestionado</strong> encadena cuatro semanas seguidas de acumulación: +130,766 (04/08) → +137,662 (11/08, +6,896) → +141,648 (18/08, +3,986) → +144,747 (25/08, <strong>+3,099</strong>). Con esto supera con claridad el antiguo máximo de enero (+137,444) y marca el nivel más alto de toda la serie histórica. El ritmo de acumulación se ha moderado semana a semana, pero la dirección no se ha revertido en ningún momento.</p>
+    <p>En paralelo, los <strong>Dealers</strong> profundizaron su corto de forma casi ininterrumpida: −207,635 (04/08) → −224,705 (11/08, −17,070) → −228,657 (18/08, −3,952) → −245,027 (25/08, <strong>−16,370</strong>). Esta última semana es el segundo mayor salto semanal de expansión corta de toda la serie, y deja a los Dealers en el nivel más corto jamás registrado en este reporte, superando el anterior extremo de enero (−245,941 quedó apenas 914 contratos por delante, y ya fue superado en magnitud de movimiento semanal).</p>
+    <p>El grupo <strong>No declarar</strong> se mantuvo prácticamente plano en las últimas dos semanas (+34,700 → +36,229 → +36,251), lo que confirma que la divergencia es casi enteramente un pulso entre Dinero Gestionado y Dealers, sin participación creciente de posiciones no reportables.</p>
+    <div class="alerta" style="margin-top:9px">⚠⚠⚠ ALERTA MÁXIMA SOSTENIDA: Cuatro semanas consecutivas de acumulación del DG frente a expansión corta de los Dealers han llevado ambos extremos a niveles nunca vistos en la serie (+144,747 / −245,027). La tensión estructural es la mayor registrada hasta la fecha. Aunque el mercado ha absorbido el desequilibrio sin un raid hasta el 25/08, el riesgo de una corrección violenta ante cualquier catalizador macro sigue siendo extremo.</div>
   </div>
 </div>
 
@@ -157,20 +135,20 @@ h1{font-size:15px;font-weight:500;color:#888780;margin-bottom:4px}
 <div class="tc" id="t-silver">
   <div class="sg">
     <div class="sc">
-      <div class="sl">Dinero Gestionado<span class="badge bw">Cae bajo +10K</span></div>
-      <div class="sv" style="color:#D85A30">+9,182 <span class="cd">▼ 2,100</span></div>
+      <div class="sl">Dinero Gestionado<span class="badge bn">Salto fuerte +2,378</span></div>
+      <div class="sv" style="color:#1D9E75">+14,073 <span class="cu">▲ 2,378</span></div>
     </div>
     <div class="sc">
-      <div class="sl">Dealers Swaps<span class="badge bn">2ª sem. cubriendo</span></div>
-      <div class="sv" style="color:#1D9E75">−25,780 <span class="cu">▲ 1,629</span></div>
+      <div class="sl">Dealers Swaps<span class="badge by">Cubre levemente</span></div>
+      <div class="sv" style="color:#D85A30">−27,900 <span class="cu">▲ 805</span></div>
     </div>
     <div class="sc">
-      <div class="sl">Productor<span class="badge by">Plano</span></div>
-      <div class="sv" style="color:#BA7517">−13,029 <span class="cu">▲ 15 (plano)</span></div>
+      <div class="sl">Productor<span class="badge bw">Nuevo mín. de la serie</span></div>
+      <div class="sv" style="color:#BA7517">−17,153 <span class="cd">▼ 1,066</span></div>
     </div>
-    <div class="sc" style="border-color:#D85A30;background:rgba(216,90,48,0.05)">
-      <div class="sl" style="color:#D85A30">Señal COT</div>
-      <div class="sv" style="color:#D85A30">DG bajo +10K · Debilidad ↓</div>
+    <div class="sc" style="border-color:#BA7517;background:rgba(186,117,23,0.05)">
+      <div class="sl" style="color:#BA7517">Señal COT</div>
+      <div class="sv" style="color:#BA7517">DG marca máx. año · Dealers casi planos ↕</div>
     </div>
   </div>
   <div class="lgd">
@@ -179,61 +157,28 @@ h1{font-size:15px;font-weight:500;color:#888780;margin-bottom:4px}
     <span><span class="ld" style="background:#BA7517"></span>Productor</span>
   </div>
   <div class="chart-wrap"><canvas id="cAG"></canvas></div>
-  <div class="ev-leyenda">
-    <span><span class="ev-dot" style="background:#5B7FA6"></span>FOMC</span>
-    <span><span class="ev-dot" style="background:#8B3A3A"></span>Guerra Irán 28/02</span>
-    <span><span class="ev-dot" style="background:#BA7517"></span>Warsh nom./disc.</span>
-    <span><span class="ev-dot" style="background:#533AB7"></span>IPC 3.8% 12/05</span>
-    <span><span class="ev-dot" style="background:#2E7D5E"></span>NNA 172K 05/06</span>
-    <span><span class="ev-dot" style="background:#7B3F9E"></span>IPC/IPP 10-11/06</span>
-    <span><span class="ev-dot" style="background:#1D7FA0"></span>Fed ↓3.75% · NPSD 17-18/06</span>
-    <span><span class="ev-dot" style="background:#5E9E3A"></span>PMI 55.7 23/06</span>
-  </div>
   <div class="lectura">
-    <div class="lectura-titulo">Plata — <span>DG cae bajo +10,000 por primera vez desde junio · Dealers cubren por segunda semana</span></div>
-    <p>El <strong>Dinero Gestionado cayó −2,100 contratos</strong> (de +11,282 a +9,182) — por debajo del umbral de +10,000 por primera vez desde la semana del 26/05. La mecánica revela apertura activa de posiciones cortas: −265 largos cerrados <em>y</em> +1,835 nuevos cortos abiertos simultáneamente. Esta es la diferencia entre toma de ganancias (la semana pasada) y posicionamiento bajista activo (esta semana). El DG está empezando a apostar en contra de la plata.</p>
-    <p>Los <strong>Dealers cubrieron por segunda semana consecutiva</strong> (+1,629 contratos, de −27,409 a −25,780). Desde el mínimo de −29,889 (14/07), los Dealers han cubierto +4,109 contratos en dos semanas. La cobertura simultánea de Dealers en oro y plata durante tres y dos semanas respectivamente sugiere que la reducción es sistémica en el complejo de metales, no un movimiento aislado.</p>
-    <p>El <strong>Productor se mantuvo esencialmente plano</strong> (+15 contratos), sin señal clara de dirección. Con el DG abriendo cortos activos y los Dealers cubriendo, el mercado de plata tiene dos fuerzas opuestas: la presión bajista del DG corto vs. la cobertura técnicamente alcista de los Dealers. El desempate lo dará el próximo movimiento del DG — si sigue abriendo cortos, la plata tendrá dificultades independientemente de lo que hagan los Dealers.</p>
-    <div class="alerta" style="margin-top:9px">⚠ El DG de plata en +9,182 es el nivel más bajo desde mayo. Con el DG abriendo cortos activamente (+1,835 nuevos en una semana), la estructura de la plata se deteriora rápidamente. Vigilar si el DG perfora +8,000 — ese sería el nivel más bajo del año para este grupo.</div>
+    <div class="lectura-titulo">Plata — <span>El DG marca máximo del año (+14,073) tras tres semanas de acumulación gradual · Dealers casi inmóviles · Productor profundiza su corto</span></div>
+    <p>El <strong>Dinero Gestionado</strong> acumuló de forma sostenida desde el 04/08: +11,974 → 11/08 +11,158 (−816) → 18/08 +11,695 (+537) → 25/08 +14,073 (<strong>+2,378</strong>, el mayor salto semanal desde junio). El nivel actual es el más alto de toda la serie de 2026, superando los máximos previos de mayo (+15,761) por poco margen — de hecho ligeramente por debajo, pero es el segundo mejor registro del año.</p>
+    <p>Los <strong>Dealers</strong> se mantuvieron casi congelados en las últimas tres semanas: −27,342 (04/08) → −28,028 (11/08) → −28,705 (18/08) → −27,900 (25/08, +805 de cobertura leve). A diferencia del oro, aquí no hay una expansión corta acelerada — el grupo parece estar absorbiendo el flujo del DG sin necesidad de ampliar agresivamente su posición.</p>
+    <p>El <strong>Productor</strong>, en cambio, sí mostró una tendencia clara: −13,080 (04/08) → −15,946 (11/08, −2,866) → −16,087 (18/08, −141) → −17,153 (25/08, −1,066), marcando un nuevo mínimo de la serie. El productor está cubriendo cada vez más venta física, en contraste con el DG que sigue comprando papel.</p>
+    <div class="insight" style="margin-top:9px">💡 Con el oro en su cuarta semana de divergencia extrema (DG +144,747 / Dealers −245,027), la plata mantiene una estructura menos tensa pero ya en su propio máximo del año. Si el oro sufre una corrección, la plata históricamente amplifica el movimiento con mayor beta — vigilar especialmente el ritmo de acumulación del DG en las próximas semanas.</div>
   </div>
 </div>
 
 <div class="ev">
-  Propiedad de William Bernal a.k.a CryptoWile · Fuentes: CFTC.gov · Bloomberg Terminal · Serie: 06/01/2026 → 28/07/2026 · 29 semanas
-  &nbsp;·&nbsp; US30: CFTC #124603 · Oro: #088691 · Plata: #084691
+  Propiedad de William Bernal a.k.a CryptoWile · Fuentes: CFTC.gov · Bloomberg Terminal · Serie: 06/01/2026 → 25/08/2026 · 33 semanas
+  &nbsp;·&nbsp; US30: CFTC #124603 / Bloomberg DMU6 · Oro: #088691 · Plata: #084691
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/3.0.1/chartjs-plugin-annotation.min.js"></script>
 <script>
-const lbs=['06/01','13/01','20/01','27/01','03/02','10/02','17/02','24/02','03/03','10/03','17/03','24/03','31/03','07/04','14/04','21/04','28/04','05/05','12/05','19/05','26/05','02/06','09/06','16/06','23/06','07/07','14/07','21/07','28/07'];
+const lbs=['06/01','13/01','20/01','27/01','03/02','10/02','17/02','24/02','03/03','10/03','17/03','24/03','31/03','07/04','14/04','21/04','28/04','05/05','12/05','19/05','26/05','02/06','09/06','16/06','23/06','07/07','14/07','21/07','28/07','04/08','11/08','18/08','25/08'];
 const gc='rgba(255,255,255,0.05)';const tc='#444441';
-const C={fomc:'#5B7FA6',war:'#8B3A3A',warsh:'#BA7517',ipc:'#533AB7',nnf:'#2E7D5E',cpi2:'#7B3F9E',fed2:'#1D7FA0',pmi:'#5E9E3A'};
-
-function ev(x,color,label,pos){
-  return{type:'line',xMin:x,xMax:x,borderColor:color+'99',borderWidth:1.5,borderDash:[4,3],
-    label:{display:true,content:label,position:pos||'start',font:{size:8},
-      color:color,backgroundColor:'transparent',padding:{x:2,y:1}}};
-}
-
-const anns={
-  fomc1:ev(3.5, C.fomc,'FOMC 28/01','start'),
-  war:  ev(7.5, C.war, 'Guerra 28/02','end'),
-  fomc2:ev(10.5,C.fomc,'FOMC 18/03','start'),
-  wnom: ev(12.3,C.warsh,'Warsh Nom. 30/03','end'),
-  wspc: ev(15,  C.warsh,'Warsh 21/04','start'),
-  fomc3:ev(16.5,C.fomc,'FOMC 29/04','end'),
-  ipc:  ev(18,  C.ipc, 'IPC 3.8% 12/05','start'),
-  nnf:  ev(21.5,C.nnf, 'NNF 172K 05/06','end'),
-  cpi2: ev(22.5,C.cpi2,'IPC/IPP 10-11/06','start'),
-  fed2: ev(23.4,C.fed2,'Fed ↓3.75% 17/06','end'),
-  npsd: ev(23.6,C.fed2,'NPSD 18/06','start'),
-  pmi:  ev(24,  C.pmi, 'PMI 55.7 23/06','end')
-};
-
 function mk(){
   return{responsive:true,maintainAspectRatio:false,interaction:{mode:'index',intersect:false},
-    plugins:{legend:{display:false},annotation:{annotations:anns},
+    plugins:{legend:{display:false},annotation:{annotations:{}},
       tooltip:{backgroundColor:'#1c1c1a',borderColor:'#333331',borderWidth:0.5,
         titleColor:'#d3d1c7',bodyColor:'#888780',padding:10,
         callbacks:{label:c=>`${c.dataset.label}: ${c.parsed.y.toLocaleString()}`}}},
@@ -253,21 +198,21 @@ function ds(label,data,color,dash){
 }
 
 new Chart(document.getElementById('cUS'),{type:'line',data:{labels:lbs,datasets:[
-  ds('Dealer Intermediary',[-7638,-959,5073,5929,7818,-1625,-321,-2915,-697,-3994,-8339,-2063,-446,3415,1340,-1582,4098,5723,10689,15274,7671,5329,3347,-6070,-3962,-7800,-8612,-9457,-11551],'#3266ad'),
-  ds('Asset Manager',[11787,4909,361,4488,2316,10447,5079,4404,-2085,353,3939,1514,4156,583,6153,5722,2718,2638,-1956,-7189,712,895,-689,7801,6516,5782,5613,4991,6165],'#1D9E75'),
-  ds('Leveraged Funds',[-9294,-7891,-9183,-14289,-11899,-11100,-7752,-4957,987,1915,1313,-3059,-7646,-7406,-12174,-9984,-12259,-14697,-12629,-11587,-13809,-11744,-7646,-10258,-9025,-1806,-2778,-3451,-1194],'#D85A30',[5,3])
+  ds('Dealer Intermediary',[-7638,-959,5073,5929,7818,-1625,-321,-2915,-697,-3994,-8339,-2063,-446,3415,1340,-1582,4098,5723,10689,15274,7671,5329,3347,-6070,-3962,-7800,-8612,-9457,-11551,-11236,-13402,-11036,-9495],'#3266ad'),
+  ds('Asset Manager',[11787,4909,361,4488,2316,10447,5079,4404,-2085,353,3939,1514,4156,583,6153,5722,2718,2638,-1956,-7189,712,895,-689,7801,6516,5782,5613,4991,6165,8603,8029,2461,5512],'#1D9E75'),
+  ds('Leveraged Funds',[-9294,-7891,-9183,-14289,-11899,-11100,-7752,-4957,987,1915,1313,-3059,-7646,-7406,-12174,-9984,-12259,-14697,-12629,-11587,-13809,-11744,-7646,-10258,-9025,-1806,-2778,-3451,-1194,-3113,-1207,2035,-1635],'#D85A30',[5,3])
 ]},options:mk()});
 
 new Chart(document.getElementById('cAU'),{type:'line',data:{labels:lbs,datasets:[
-  ds('Dinero Gestionado',[123213,134745,137444,118159,92072,92022,95893,95974,97917,98399,102043,91621,92814,90032,95141,92976,89752,94254,98015,93540,97446,112179,105863,113721,115395,116161,120779,124831,119795],'#3266ad'),
-  ds('Dealers Swaps',[-221493,-245941,-247400,-207696,-183144,-179293,-175384,-180988,-179792,-183280,-180814,-181612,-181730,-174455,-182552,-182522,-174621,-179823,-190056,-173715,-166256,-186191,-181736,-190516,-196068,-201296,-195639,-193878,-191760],'#D85A30',[5,3]),
-  ds('No declarar',[44403,45868,44919,42889,42174,37726,36867,41629,40438,39844,38779,35501,38438,37446,38556,38934,35242,35632,38636,31796,31506,30325,27199,27343,24065,28036,28106,29289,30239],'#BA7517',[2,2])
+  ds('Dinero Gestionado',[123213,134745,137444,118159,92072,92022,95893,95974,97917,98399,102043,91621,92814,90032,95141,92976,89752,94254,98015,93540,97446,112179,105863,113721,115395,116161,120779,124831,119795,130766,137662,141648,144747],'#3266ad'),
+  ds('Dealers Swaps',[-221493,-245941,-247400,-207696,-183144,-179293,-175384,-180988,-179792,-183280,-180814,-181612,-181730,-174455,-182552,-182522,-174621,-179823,-190056,-173715,-166256,-186191,-181736,-190516,-196068,-201296,-195639,-193878,-191760,-207635,-224705,-228657,-245027],'#D85A30',[5,3]),
+  ds('No declarar',[44403,45868,44919,42889,42174,37726,36867,41629,40438,39844,38779,35501,38438,37446,38556,38934,35242,35632,38636,31796,31506,30325,27199,27343,24065,28036,28106,29289,30239,28857,34700,36229,36251],'#BA7517',[2,2])
 ]},options:mk()});
 
 new Chart(document.getElementById('cAG'),{type:'line',data:{labels:lbs,datasets:[
-  ds('Dinero Gestionado',[15822,13792,9946,7699,4983,4569,5968,8523,7766,10289,9647,11158,11266,10398,11270,8868,10606,10843,15761,11564,10055,10444,10403,12885,11741,13201,11501,11282,9182],'#3266ad'),
-  ds('Dealers Swaps',[-26146,-29781,-26633,-22843,-27458,-25373,-26464,-24405,-24951,-25424,-23561,-25046,-23365,-23345,-23377,-24568,-22342,-22922,-24014,-23375,-21348,-24668,-23709,-25706,-26518,-29739,-29889,-27409,-25780],'#D85A30',[5,3]),
-  ds('Productor',[-25545,-25511,-19756,-21213,-18267,-16790,-15883,-16675,-15015,-16153,-14797,-15242,-15492,-15570,-16756,-16417,-18110,-17613,-19632,-19293,-19545,-17993,-16659,-16612,-13722,-13356,-12708,-13044,-13029],'#BA7517',[2,2])
+  ds('Dinero Gestionado',[15822,13792,9946,7699,4983,4569,5968,8523,7766,10289,9647,11158,11266,10398,11270,8868,10606,10843,15761,11564,10055,10444,10403,12885,11741,13201,11501,11282,9182,11974,11158,11695,14073],'#3266ad'),
+  ds('Dealers Swaps',[-26146,-29781,-26633,-22843,-27458,-25373,-26464,-24405,-24951,-25424,-23561,-25046,-23365,-23345,-23377,-24568,-22342,-22922,-24014,-23375,-21348,-24668,-23709,-25706,-26518,-29739,-29889,-27409,-25780,-27342,-28028,-28705,-27900],'#D85A30',[5,3]),
+  ds('Productor',[-25545,-25511,-19756,-21213,-18267,-16790,-15883,-16675,-15015,-16153,-14797,-15242,-15492,-15570,-16756,-16417,-18110,-17613,-19632,-19293,-19545,-17993,-16659,-16612,-13722,-13356,-12708,-13044,-13029,-13080,-15946,-16087,-17153],'#BA7517',[2,2])
 ]},options:mk()});
 
 function sw(id,el){
